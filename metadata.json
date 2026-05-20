@@ -1,0 +1,8 @@
+{
+  "name": "Swiss Law Citation Assistant",
+  "description": "An enterprise-grade AI-powered Swiss Law Citation Assistant using Google Gemini API. Provides multilingual legal retrieval, explainable AI reasoning, interactive tutoring, and auto-correction of Swiss legal citations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

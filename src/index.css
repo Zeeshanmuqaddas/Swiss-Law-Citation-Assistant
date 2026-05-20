@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia:ital@1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0d0d0f;
+  --color-ink: #f0f0f5;
+  --color-line: #2d2d38;
+  --color-accent: #B08D57; /* Gold/bronze accent common in legal */
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Base custom classes to match design recipe */
+.data-row {
+  border-bottom: 1px solid var(--color-line);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.data-row:hover {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.col-header {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 11px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.glass-panel {
+  background: rgba(45, 45, 56, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(240, 240, 245, 0.1);
+  border-radius: 12px;
+}
+
+/* Minimal markdown styles for the tutor sidebar */
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  font-family: var(--font-serif);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+.markdown-body p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
